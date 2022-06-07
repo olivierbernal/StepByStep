@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="view"
+            type="fr.oworld.stepbystep.ui.ToolbarOther" />
+
+        <variable
+            name="model"
+            type="fr.oworld.stepbystep.ui.VMOtherToolbar" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/green"
+        android:elevation="5dp"
+        android:fitsSystemWindows="true"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            visible="@{model.isBackVisible()}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="@{_ -> view.requireActivity().onBackPressed()}"
+            android:src="@drawable/ic_back"
+            android:tint="@android:color/white"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    visible="@{model.isTitleVisible()}"
+                    style="@style/TxtToolBarTitleWithSubTitleBase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.title}"
+                    android:layout_marginStart="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    visible="@{model.isSubtitleVisible()}"
+                    style="@style/TxtToolBarSubTitleBase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.subTitle}"
+                    android:layout_marginStart="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                visible="@{model.isSubtitleAloneVisible()}"
+                style="@style/TxtToolBarSubTitleOnlyBase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{model.subTitle}"
+                android:layout_marginStart="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

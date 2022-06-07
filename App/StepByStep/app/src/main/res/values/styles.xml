@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TxtNormal">
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="TxtBold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TxtRevalia">
+        <item name="android:fontFamily">@font/revalia_regular</item>
+    </style>
+
+    <!-- Txt styles -->
+    <style name="TxtHeaderBase" parent="TxtNormal">
+        <item name="android:textSize">@dimen/txt_h3</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TxtToolBarTitleOnlyBase" parent="TxtRevalia">
+        <item name="android:textSize">@dimen/txt_h5</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="TxtToolBarSubTitleOnlyBase" parent="TxtRevalia">
+        <item name="android:textSize">@dimen/txt_h6</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="TxtToolBarTitleWithSubTitleBase" parent="TxtNormal">
+        <item name="android:textSize">@dimen/txt_body</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="TxtToolBarSubTitleBase" parent="TxtRevalia">
+        <item name="android:textSize">@dimen/txt_body</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="TxtNormalBase" parent="TxtNormal">
+        <item name="android:textSize">@dimen/txt_body</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TxtCaptionBase" parent="TxtNormal">
+        <item name="android:textSize">@dimen/txt_caption</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TxtTitleBase" parent="TxtBold">
+        <item name="android:textSize">@dimen/txt_h6</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="TxtNormalBoldBase" parent="TxtBold">
+        <item name="android:textSize">@dimen/txt_body</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TxtSubtitleBase" parent="TxtNormal">
+        <item name="android:textSize">@dimen/txt_subtitle</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TxtSubtitleBaseWhite" parent="TxtNormal">
+        <item name="android:textSize">@dimen/txt_subtitle</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TxtButtonBase" parent="TxtNormal">
+        <item name="android:textSize">@dimen/txt_button</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

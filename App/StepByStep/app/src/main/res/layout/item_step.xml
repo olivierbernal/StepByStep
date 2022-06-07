@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/stepCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="3dp"
+        android:elevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/stepNumber"
+                style="@style/TxtHeaderBase"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_margin="0dp"/>
+
+            <ImageView
+                android:id="@+id/checkImage"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_checked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/stepNumber"
+                app:layout_constraintBottom_toBottomOf="@id/stepNumber"
+                android:layout_margin="20dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/stepName"
+                style="@style/TxtNormalBase"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@id/percentage"
+                app:layout_constraintTop_toBottomOf="@id/stepNumber"
+                android:layout_margin="20dp"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/percentageGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="1" />
+
+            <View
+                android:id="@+id/percentageBg"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                app:layout_constraintTop_toTopOf="@id/percentageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@color/grey"
+                />
+
+            <View
+                android:id="@+id/percentageView"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/percentageGuide"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@color/black"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/percentage"
+                style="@style/TxtSubtitleBaseWhite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="bla  asd"
+                android:textAlignment="center"
+                app:layout_constraintTop_toTopOf="@id/percentageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/percentageGuide"
+                app:layout_constraintStart_toStartOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

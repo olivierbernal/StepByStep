@@ -1,0 +1,24 @@
+n_etape;etape;n_sous_etape;sous_etape;n_rubrique;rubrique
+E1;Trouver le stage qui me convient;SE1;Je trouve l’entreprise;R1;Ce qui m’intéresse…
+E1;Trouver le stage qui me convient;SE1;Je trouve l’entreprise;R2;Les entreprises qui recrutent…
+E2;Candidater à un stage;SE1;Je rédige mon CV;R1;Des exemples de CV
+E2;Candidater à un stage;SE1;Je rédige mon CV;R2;Les étapes de rédaction
+E2;Candidater à un stage;SE2;J’envoie ou je dépose mon CV;R1;
+E3;Réaliser mon stage;SE1;"Ma candidature est accepté !
+Je me prépare";R1;Tout est ok administrativement
+E3;Réaliser mon stage;SE1;"Ma candidature est accepté !
+Je me prépare";R2;Préparation de l’immersion
+E3;Réaliser mon stage;SE1;"Ma candidature est accepté !
+Je me prépare";R3;Préparation de la logistique
+E3;Réaliser mon stage;SE2;"C’est parti pour le stage :
+Déroulement de la semaine";R1;1er jour : immersion
+E3;Réaliser mon stage;SE2;"C’est parti pour le stage :
+Déroulement de la semaine";R2;Milieu du stage : croisière
+E3;Réaliser mon stage;SE2;"C’est parti pour le stage :
+Déroulement de la semaine";R3;Dernier jour
+E3;Réaliser mon stage;SE2;"C’est parti pour le stage :
+Déroulement de la semaine";R4;Ma checklist du pro
+E4;Réaliser mon rapport de stage;SE1;Je prépare mon rapport;R1;Quels contenus dans mon rapport ?
+E4;Réaliser mon rapport de stage;SE1;Je prépare mon rapport;R2;Les bons outils
+E4;Réaliser mon rapport de stage;SE2;Je rédige mon rapport;R1;Mission rédaction
+E4;Réaliser mon rapport de stage;SE2;Je rédige mon rapport;R2;Relecture

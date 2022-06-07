@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="fr.oworld.stepbystep.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="fr.oworld.stepbystep.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_task"
+        android:name="fr.oworld.stepbystep.ui.MyTasks.MyTasksFragment"
+        android:label="@string/title_tasks"
+        tools:layout="@layout/fragment_my_tasks" />
+
+    <fragment
+        android:id="@+id/navigation_section_task"
+        android:name="fr.oworld.stepbystep.ui.home.section.SectionTaskFragment"
+        android:label="prout"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_camera"
+        android:name="fr.oworld.stepbystep.ui.camera.CameraFragment"
+        tools:layout="@layout/fragment_camera" />
+
+    <fragment
+        android:id="@+id/navigation_content"
+        android:name="fr.oworld.stepbystep.ui.MyContent.MyContentFragment"
+        tools:layout="@layout/fragment_my_content" />
+
+    <fragment
+        android:id="@+id/navigation_preview_image"
+        android:name="fr.oworld.stepbystep.ui.camera.PicturePreviewFragment"
+        android:label="Image"
+        tools:layout="@layout/fragment_picture_preview" />
+
+    <fragment
+        android:id="@+id/navigation_preview_video"
+        android:name="fr.oworld.stepbystep.ui.camera.VideoPreviewFragment"
+        android:label="Vidéo"
+        tools:layout="@layout/fragment_video_preview" />
+
+</navigation>

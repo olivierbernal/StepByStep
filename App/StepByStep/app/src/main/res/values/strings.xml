@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">StepByStep</string>
+    <string name="title_home">Parcours</string>
+    <string name="title_tasks">Mes tâches</string>
+    <string name="title_dashboard">Journal de bord</string>
+    <string name="title_contents">Mes contenus</string>
+    <string name="termine">J\'ai terminé</string>
+    <string name="passe_etape_suivante">Passer à l\'étape suivante...</string>
+    <string name="a_faire">A faire...</string>
+    <string name="fait">C\'est fait</string>
+    <string name="liste">A explorer</string>
+    <string name="voir_plus">Voir plus</string>
+    <string name="meteo_jour">Météo du jour</string>
+    <string name="meteo_jour_details">Comment ca va aujourd\'hui?</string>
+    <string name="tips_jour">Tips du jour</string>
+    <string name="mes_competences">Mes compétences</string>
+    <string name="debut_video">Enregistrement d\'une vidéo de 10 secondes.</string>
+    <string name="fin_video">Fin de l\'enregistrement.</string>
+    <string name="photo_ok">Photo prise!</string>
+
+    <string name="video">Vidéos</string>
+    <string name="photo">Photos</string>
+    <string name="audio">Audios</string>
+    <string name="notes">Notes</string>
+    <string name="classer_par">Classer...</string>
+    <string name="par_type">Par type</string>
+    <string name="par_etape">Par étape</string>
+    <string name="skill_pas_fini">Plus que %s tâches à accomplir pour obtenir la compétence de %s !</string>
+    <string name="skill_pas_fini_skill_e">Plus que %s tâches à accomplir pour obtenir la compétence d\'%s !</string>
+
+    <string name="skill_fini">Bravo !\nTu as accompli la compétence %s !</string>
+    <string name="skill_fini_skill_e">Bravo !\nTu as accompli la compétence d\'%s !</string>
+    <string name="tip_moment">Le tips du moment</string>
+
+    <string name="tache_a_faire">A faire</string>
+    <string name="tache_fait">C\'est fait</string>
+    <string name="tache_liste">A explorer</string>
+
+</resources>
